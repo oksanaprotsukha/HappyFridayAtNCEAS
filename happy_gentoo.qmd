@@ -8,7 +8,6 @@ editor: visual
 library(tidyverse)
 library(palmerpenguins)
 library(emojifont)
-library(themeAutumnColors)
 ```
 
 ```{r}
@@ -21,9 +20,17 @@ penguins %>%
   geom_point()+
   annotate("text",
            label = emoji("penguin"), 
-           cex=25, 
+           cex=60, 
            family='EmojiOne',
            x = 6100,
-           y = 215)+
-  theme_autumncolors()
+           y = 215) +
+  theme_minimal()
+  #theme_autumncolors()
+```
+
+```{r}
+add_this <- function(x,y){
+  x+y
+}
+
 ```
