@@ -1,0 +1,12 @@
+---
+title: "Happy Gentoo"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(emojifont)
+library(themeAutumnColors)
+```
